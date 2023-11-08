@@ -14,7 +14,7 @@ Above all a creative coding exercise should be genuinely fun.  Engineers should 
 
 The purpose of this particular exercise is to progressively introduce engineers, potentially new to Rust and/or ZK cryptography, to various elements of a complex problem domain.  Each domain element will ultimately play a role in a production system designed to support servicing portfolios of financial contracts issued in conformance to the ACTUS standard.   
 
-The exercise will initially focus upon implementing a backend system along with a CLI utility for interacting with the system.  Overtime the exercise focus will pivot to front-end development.  The end result will be a full stack solution enabling a customer to issue an ACTUS compliant financial contratc.    
+The exercise will initially focus upon implementing a backend system along with a CLI utility for interacting with the system.  Over time the exercise focus will pivot to front-end development.  The end result will be a full stack solution enabling a customer to issue an ACTUS compliant financial contract.    
 
 The sytem is composed of 5 nodes, each node being a single process that runs an identical binary.  The node software exposes some form of API surface that will accept computational payloads.  For each received computational payload, the node returns a compute identifier and routes the payload to a ZK proving sub-system for processing.  Once processed the resultant proof is shared with the other nodes, each node will retain a local copy of the proof.
 
